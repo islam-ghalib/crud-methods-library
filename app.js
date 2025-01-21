@@ -71,7 +71,7 @@ app.get("/books", (req, res) => {
 
 //logic get book by the id 
 
-pp.get("/books/:id", (req, res) => {
+app.get("/books/:id", (req, res) => {
     const bookID = parseInt(req.params.id, 10);
 
     const book = books.find((b) => b.id === bookID);
